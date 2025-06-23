@@ -1,4 +1,5 @@
 DANH SÁCH BÀI TẬP PASCAL
 
 1. Tìm số lớn nhất trong 4 số nhập từ bàn phím, và chỉ sử dụng hai biến
+https://github.com/Yu-Shi-Dre/Pascal/blob/main/bt1.pas
 2. Kiểm tra có phải tam giác đều hay không khi biết trước 3 cạnh
