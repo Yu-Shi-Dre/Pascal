@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Danh sách bài tập Pascal</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 600px;
+      max-width: 700px;
       margin: 40px auto;
       background: #f9f9f9;
       padding: 20px;
@@ -15,23 +15,23 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     h1 {
-      color: #333;
       text-align: center;
+      color: #333;
     }
-    #search {
+    input[type="text"] {
       width: 100%;
       padding: 10px;
-      font-size: 16px;
       margin-bottom: 20px;
-      border: 1px solid #ccc;
       border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
     }
     ol {
-      line-height: 1.8;
       padding-left: 20px;
+      line-height: 1.8;
     }
     li {
-      margin: 5px 0;
+      margin-bottom: 5px;
     }
     a {
       color: #007acc;
@@ -40,18 +40,62 @@
     a:hover {
       text-decoration: underline;
     }
+    mark {
+      background-color: yellow;
+      font-weight: bold;
+    }
+    #results {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
   <h1>📘 Danh sách bài tập Pascal</h1>
 
-  <input type="text" id="search" placeholder="🔍 Tìm theo tên bài...">
+  <input type="text" id="searchBox" placeholder="🔍 Nhập từ khóa để tìm bài tập...">
+  <div id="results"></div>
 
-  <ol id="exercise-list">
+  <ol id="exerciseList">
     <li><a href="https://github.com/Yu-Shi-Dre/Pascal/blob/3c3f5d2685c307449f51c29f2b3f4f35dad7e1ff/bt1.pas" target="_blank">Bài 1: Tìm số lớn nhất trong 4 số nhập từ bàn phím, và chỉ sử dụng hai biến</a></li>
     <li><a href="https://github.com/Yu-Shi-Dre/Pascal/blob/3c3f5d2685c307449f51c29f2b3f4f35dad7e1ff/bt2.pas" target="_blank">Bài 2: Kiểm tra có phải tam giác đều hay không khi biết trước 3 cạnh</a></li>
     
     <!-- Thêm dòng mới ở đây -->
   </ol>
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    const results = document.getElementById('results');
+    const list = document.getElementById('exerciseList');
+    const items = list.getElementsByTagName('li');
+
+    searchBox.addEventListener('input', function () {
+      const keyword = this.value.toLowerCase();
+      let count = 0;
+      results.innerHTML = '';
+      for (let i = 0; i < items.length; i++) {
+        const a = items[i].querySelector('a');
+        const text = a.textContent.toLowerCase();
+
+        if (keyword && text.includes(keyword)) {
+          const index = i + 1;
+          const originalText = a.textContent;
+          const highlighted = originalText.replace(
+            new RegExp(keyword, 'gi'),
+            (match) => `<mark>${match}</mark>`
+          );
+          a.innerHTML = highlighted;
+          items[i].style.display = 'list-item';
+          count++;
+        } else {
+          a.innerHTML = a.textContent; // reset text
+          items[i].style.display = keyword ? 'none' : 'list-item';
+        }
+      }
+      if (keyword) {
+        results.textContent = count > 0 ? `🔎 Có ${count} bài chứa từ khóa "${keyword}".` : 'Không tìm thấy kết quả.';
+      }
+    });
+  </script>
 </body>
 </html>
