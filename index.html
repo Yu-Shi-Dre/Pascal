@@ -18,9 +18,20 @@
       color: #333;
       text-align: center;
     }
+    #search {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
     ol {
       line-height: 1.8;
       padding-left: 20px;
+    }
+    li {
+      margin: 5px 0;
     }
     a {
       color: #007acc;
@@ -32,13 +43,13 @@
   </style>
 </head>
 <body>
-  <h1>👋 Hello, I'm Ngọc!</h1>
-  <p>Welcome to my GitHub Page</p>
-  <p>Visit my repositories at <a href="https://github.com/Yu-Shi-Dre/Pascal" target="_blank">GitHub</a></p>
   <h1>📘 Danh sách bài tập Pascal</h1>
-  <ol>
-    <li><a href="https://github.com/Yu-Shi-Dre/Pascal/blob/3c3f5d2685c307449f51c29f2b3f4f35dad7e1ff/bt1.pas" target="_blank">Bài 1: Tìm số lớn nhất trong 4 số nhập từ bàn phím, và chỉ sử dụng hai biến</a></li>
-    <li><a href="https://github.com/Yu-Shi-Dre/Pascal/blob/3c3f5d2685c307449f51c29f2b3f4f35dad7e1ff/bt2.pas" target="_blank">Bài 2: Kiểm tra có phải tam giác đều hay không khi biết trước 3 cạnh</a></li>
+
+  <input type="text" id="search" placeholder="🔍 Tìm theo tên bài...">
+
+  <ol id="exercise-list">
+    <a href="https://github.com/Yu-Shi-Dre/Pascal/blob/3c3f5d2685c307449f51c29f2b3f4f35dad7e1ff/bt1.pas" target="_blank">Bài 1: Tìm số lớn nhất trong 4 số nhập từ bàn phím, và chỉ sử dụng hai biến</a>
+    <a href="https://github.com/Yu-Shi-Dre/Pascal/blob/3c3f5d2685c307449f51c29f2b3f4f35dad7e1ff/bt2.pas" target="_blank">Bài 2: Kiểm tra có phải tam giác đều hay không khi biết trước 3 cạnh</a>
     
     <!-- Thêm dòng mới ở đây -->
   </ol>
