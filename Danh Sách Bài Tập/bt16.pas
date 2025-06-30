@@ -4,7 +4,8 @@ uses crt;
 var n:integer;
 begin
     clrscr;
-    writeln('Cho biet hang tram, hang chuc, hang don vi cua so co 3 chu so.'+#13#10);
+    writeln('Cho biet hang tram, hang chuc, hang don vi cua so co 3 chu so.');
+    writeln;
     write('Nhap so n = ');readln(n);
     writeln;
     if (n<100) or (n > 999) then writeln('Ban da nhap sai so !') else
