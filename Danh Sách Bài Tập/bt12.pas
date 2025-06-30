@@ -8,8 +8,8 @@ begin
     if a<0 then write(#13#10+'Ban da nhap sai so !');
     if a>=0 then
     begin
-    writeln;
-    write('Chu vi la: ',a*4:0:2,#13#10+'Dien tich la: ',a*a:0:2);
-end;
+       writeln;
+       write('Chu vi la: ',a*4:0:2,#13#10+'Dien tich la: ',a*a:0:2);
+    end;
     readln
 end.
