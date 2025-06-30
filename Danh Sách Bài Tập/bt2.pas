@@ -1,4 +1,4 @@
-{Kiểm tra có phải tam giác đều hay không khi biết trước 3 cạnh}
+{Kiểm tra có phải tam giác cân hay không khi biết trước 3 cạnh}
 program bt2;
 uses crt;
 var a,b,c:byte;
