@@ -11,6 +11,7 @@ begin
     tam := x ;
     x   := y;
     y   := tam;
-    write(#13#10+'Sau khi hoan doi so x = ',x:0:2,' va so y = ',y:0:2);
+    writeln;
+    write('Sau khi hoan doi so x = ',x:0:2,' va so y = ',y:0:2);
     readln
 end.
