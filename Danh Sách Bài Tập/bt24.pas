@@ -16,7 +16,7 @@ begin
     writeln('Gia tri b la: ',b);
     writeln('Gia tri c la: ',c);
     writeln;
-    if (a=b) and (a=c) and (a=c) then write('HOA NHAU !');
+    if (a=b) and (a=c) and (b=c) then write('HOA NHAU !');
     if (a<>b) and (a<>c) then write('A THANG !');
     if (b<>c) and (b<>a) then write('B THANG !');
     if (c<>a) and (c<>b) then write('C THANG !');
