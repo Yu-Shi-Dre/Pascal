@@ -7,8 +7,8 @@ begin
     if n=0 then write('So o khong phai so chan');
     if n>0 then
     begin
-    if n mod 2 = 0 then write('So ',n,' la so chan')
-    else write('So ',n,' khong phai so chan');
+       if n mod 2 = 0 then write('So ',n,' la so chan')
+       else write('So ',n,' khong phai so chan');
     end;
     readln
 end.
