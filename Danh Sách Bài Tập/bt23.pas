@@ -10,7 +10,7 @@ begin
     writeln;
     if (a*b*c)>0 then
     begin    
-       if (a+b>c) and (a+c>b) and(b+c>a) then 
+       if ((a+b)>c) and ((a+c)>b) and((b+c)>a) then 
        begin
           if (a*a+b*b=c*c) or (a*a+c*c=b*b) or (b*b+c*c=a*a)  then write('Day la tam giac vuong !')
           else write('Day khong phai tam giac vuong !');
