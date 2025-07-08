@@ -15,6 +15,5 @@ begin
               else write('Day khong phai tam giac deu !');
            end
     else write('Ban da nhap sai so ! Vui long chay lai chuong trinh');
-    end;
     readln
 end.
