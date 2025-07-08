@@ -11,10 +11,10 @@ begin
     if (a = b) and (a=c) and (a=d) then write('Bon so bang nhau !')
     else
     begin
-    if max<b then max:=b;
-    if max<c then max:=c;
-    if max<d then max:=d;
-    write('So lon nhat trong bon so la: ',max:0:2);
-end;
+        if max<b then max:=b;
+        if max<c then max:=c;
+        if max<d then max:=d;
+        write('So lon nhat trong bon so la: ',max:0:2);
+    end;
     readln
 end.
