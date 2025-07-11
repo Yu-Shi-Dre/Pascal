@@ -22,7 +22,7 @@ begin
                     gt := gt*i;
                     i  := i+2;   
                 end;
-                write('Giai thua n! = ',gt:0);       
+                write('Giai thua n!! = ',gt:0);       
             end;
      if  ((n mod 2)<>0) and (n>0) then 
             begin
@@ -32,7 +32,7 @@ begin
                     gt := gt*i;
                     i  := i+2;      
                 end; 
-                write('Giai thua n! = ',gt:0);      
+                write('Giai thua n!! = ',gt:0);      
             end;
     readln
 end.
