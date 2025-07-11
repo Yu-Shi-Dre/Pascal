@@ -3,9 +3,10 @@ program bt13;
 uses math;
 var r:real;
 begin
-    
     writeln('Tinh chu vu va dien tich hinh tron.');
+    writeln;
     writeln('Nhap chieu dai ban kinh: ');readln(r);
+    writeln;
     if r<=0 then write('Ban da nhap sai so !');
     if r>0 then
     begin
