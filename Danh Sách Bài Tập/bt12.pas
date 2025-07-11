@@ -5,6 +5,7 @@ var a:real;
 begin
     clrscr;
     writeln('Tinh chu vi va dien tich hinh vuong.');
+    writeln;
     writeln('Nhap chieu dai canh hinh vuong: ');readln(a);
     writeln;
     if a<=0 then write('Ban da nhap sai so !');
