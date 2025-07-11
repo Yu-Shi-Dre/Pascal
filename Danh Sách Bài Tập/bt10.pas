@@ -1,10 +1,12 @@
 {Viết chương trình cộng hai số nguyên}
 program bt10;
 uses crt;
-var a,b:real;
+var a,b:integer;
 begin
    clrscr;
-   write('Tinh Tong Hai so.'+#13#10+#13#10,'Nhap so a: ');readln(a);
+    write('Tinh Tong Hai so.');
+    writeln;
+    write('Nhap so a: ');readln(a);
     write('Nhap so b: ');readln(b);
     writeln;
     write('Tong hai so la: ',a+b:0:2);
