@@ -15,7 +15,7 @@ begin
         for i:=1 to n do 
         begin
             
-            if ((i mod 2 )<> 0) then write(i:0,', ');
+            if ((i mod 2 )<> 0) then write(i:4);
         end;
      end; 
     readln
