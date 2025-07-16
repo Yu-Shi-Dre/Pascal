@@ -14,7 +14,7 @@ begin
     if (n<=0) then write('Ban da nhap sai so ! Vui long chay lai chuong trinh.')
     else
     begin    
-        for i := 1 to n do if ((n mod i)=0) then tong := (tong+i);
+        for i := 1 to n-1 do if ((n mod i)=0) then tong := (tong+i);
         if (tong = n) then write('So ',n,' la so hoan chinh.')
         else write('So ',n,' khong la so hoan chinh.'); 
     end;    
