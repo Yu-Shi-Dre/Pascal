@@ -12,7 +12,7 @@ begin
     if (n<=0) then write('Ban da nhap sai so ! Vui long chay lai chuong trinh.');     
     if (n>=1) and (n<=6) then write('Khong co so hoan chinh.');
     if (n>6) then write('Cac so hoan chinh la: ');
-        for j:=2 to (n-1) do
+        for j:=1 to (n-1) do
         begin
             tong  := 0;   
             for i := 1 to j-1 do if ((j mod i)=0) then tong := (tong+i);
