@@ -12,8 +12,8 @@ begin
     writeln;
     
     if (n<=0) then write('Ban da nhap sai so ! Vui long chay lai chuong trinh.');     
-    if (n>=1) and (n<=6) then write('Khong phai la hoan chinh.');
-    if (n>6) then
+    if (n>=1) and (n<6) then write('Khong phai la hoan chinh.');
+    if (n>=6) then
     begin
         tong := 0;
         for i := 1 to n-1 do if ((n mod i)=0) then tong := (tong+i);
